@@ -164,7 +164,7 @@ nav h3 > i{
     text-align: center;
     max-width: 1440px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 6.25rem;
 }
 .habits > h1{
     color: rgb(255, 255, 255);
@@ -207,6 +207,41 @@ nav h3 > i{
     margin: 0 auto;
 }
 
+/* extra mile section */
+.extra-mile{
+    max-width: 1440px;
+    margin: 0 auto;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 3rem;
+    margin-top: 6.25rem;
+}
+.extra-container{
+    display: flex;
+    justify-content: space-between;
+}
+.extra-content{
+    width: 40%;
+}
+.extra-content > h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.extra-content > p{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.extra-image{
+    width: 40%;
+}
+.extra-image img{
+    width: 100%;
+    border-radius: 18px;
+}
 /* responsive section */
 @media screen and (max-width:576px){
     /* *{
@@ -218,11 +253,11 @@ nav h3 > i{
     .menu{
         display: inline;
     }
-    .banner, .habits-container{
+    .banner, .habits-container, .extra-container{
         flex-direction: column;
         gap: 2rem;
     }
-    .banner-content{
+    .banner-content, .extra-content, .extra-image{
         width: 100%;
     }
     .btn-secondary{
@@ -230,6 +265,9 @@ nav h3 > i{
     }
     #box-2{
         margin-left: 0px;
+    }
+    .extra-content .btn-primary{
+        width: 100%;
     }
 
 }
