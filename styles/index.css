@@ -213,12 +213,13 @@ nav h3 > i{
     margin: 0 auto;
     border-radius: 18px;
     background: rgb(34, 34, 34);
-    padding: 3rem;
     margin-top: 6.25rem;
+    
 }
 .extra-container{
     display: flex;
     justify-content: space-between;
+    padding: 3rem;
 }
 .extra-content{
     width: 40%;
@@ -241,6 +242,78 @@ nav h3 > i{
 .extra-image img{
     width: 100%;
     border-radius: 18px;
+}
+/* bmi section */
+.bmi{
+    background: rgb(34, 34, 34);
+    margin-top: 6.25rem;
+}
+.bmi-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 3.5rem 0;
+    gap: 5rem;
+}
+.bmi-container h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.bmi-container p{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.bmi-container table, th, td{
+    margin-top: 3.5rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    text-align: left;
+}
+.bmi-container th{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.bmi-container td{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.calc-bmi .row-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+}
+.calc-bmi .row-3{
+    grid-column: span 2;
+}
+.calc-bmi input[type=text]{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.8rem;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.calc-bmi select{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.8rem;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.calc-bmi button{
+    margin-top: 2rem;
 }
 /* responsive section */
 @media screen and (max-width:576px){
@@ -269,5 +342,14 @@ nav h3 > i{
     .extra-content .btn-primary{
         width: 100%;
     }
-
+    .bmi-container{
+        grid-template-columns: 1fr;
+        padding: 3.5rem 1rem;
+    }
+    .calc-bmi .row-1{
+        grid-template-columns: 1fr;
+    }
+    .calc-bmi .row-3{
+        grid-column: span 1;
+    }
 }
