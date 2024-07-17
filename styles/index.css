@@ -159,6 +159,54 @@ nav h3 > i{
     cursor: pointer;
     margin-left: 10px;
 }
+/* habits section */
+.habits{
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.habits > h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.habits > p{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+.habits-container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.habit-item{
+    text-align: center;
+}
+.habit-item > img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+}
+.habit-item > h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.habit-item > p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    max-width: 230px;
+    margin: 0 auto;
+}
+
 /* responsive section */
 @media screen and (max-width:576px){
     /* *{
@@ -170,9 +218,9 @@ nav h3 > i{
     .menu{
         display: inline;
     }
-    .banner{
+    .banner, .habits-container{
         flex-direction: column;
-        gap: 5px;
+        gap: 2rem;
     }
     .banner-content{
         width: 100%;
