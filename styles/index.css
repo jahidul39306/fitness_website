@@ -332,12 +332,60 @@ nav h3 > i{
 .calc-bmi button{
     margin-top: 2rem;
 }
+
+/* team section */
+.team{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 6.25rem;
+    text-align: center;
+}
+.team > h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.team > p{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 3.5rem;
+}
+.team-container{
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.team-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+.image-text{
+    text-align: left;
+    margin-top: -5rem;
+    margin-left: 2rem;
+}
+.image-text h3{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 800;
+}
+.image-text p{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 600;
+}
 /* responsive section */
 @media screen and (max-width:576px){
     /* *{
         font-size: 8px;
     } */
-     header, .habits, .extra-mile, .bmi{
+     header, .habits, .extra-mile, .bmi-content, .team{
         padding-left: 1rem;
         padding-right: 1rem;
      }
@@ -363,7 +411,7 @@ nav h3 > i{
     .extra-content .btn-primary{
         width: 100%;
     }
-    .bmi-container{
+    .bmi-container, .team-container{
         grid-template-columns: 1fr;
     }
     .calc-bmi .row-1{
