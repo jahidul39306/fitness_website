@@ -380,12 +380,73 @@ nav h3 > i{
     font-size: 1rem;
     font-weight: 600;
 }
+
+
+/* unique section */
+.price{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 6.25rem;
+    text-align: center;
+}
+.price > h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.price > p{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 3.5rem;
+}
+.price-container{
+    display: grid;
+    grid-template-columns: repeat(2, 0.3fr);
+    gap: 5rem;
+    justify-content: center;
+}
+.price-box{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 2rem;
+    text-align: left;
+}
+.price-box h3{
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.price-box h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 2rem 0;
+}
+.price-box p{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.price-box .btn-primary{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.price-box li{
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+}
 /* responsive section */
 @media screen and (max-width:576px){
     /* *{
         font-size: 8px;
     } */
-     header, .habits, .extra-mile, .bmi-content, .team{
+     header, .habits, .extra-mile, .bmi-content, .team, .price{
         padding-left: 1rem;
         padding-right: 1rem;
      }
@@ -411,7 +472,7 @@ nav h3 > i{
     .extra-content .btn-primary{
         width: 100%;
     }
-    .bmi-container, .team-container{
+    .bmi-container, .team-container, .price-container{
         grid-template-columns: 1fr;
     }
     .calc-bmi .row-1{
