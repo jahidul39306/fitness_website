@@ -13,6 +13,7 @@ body{
 /* header section */
 header{
     background: radial-gradient(rgb(50, 50, 50) 0%, rgb(0, 0, 0) 100%);
+    padding-top: 2rem;
 }
 /* nav section */
 nav{
@@ -211,12 +212,11 @@ nav h3 > i{
 .extra-mile{
     max-width: 1440px;
     margin: 0 auto;
-    border-radius: 18px;
-    background: rgb(34, 34, 34);
     margin-top: 6.25rem;
-    
 }
 .extra-container{
+    background: rgb(34, 34, 34);
+    border-radius: 18px;
     display: flex;
     justify-content: space-between;
     padding: 3rem;
@@ -320,6 +320,10 @@ nav h3 > i{
     /* *{
         font-size: 8px;
     } */
+     header, .habits, .extra-mile, .bmi{
+        padding-left: 1rem;
+        padding-right: 1rem;
+     }
     .nav-links{
         display: none;
     }
@@ -344,7 +348,6 @@ nav h3 > i{
     }
     .bmi-container{
         grid-template-columns: 1fr;
-        padding: 3.5rem 1rem;
     }
     .calc-bmi .row-1{
         grid-template-columns: 1fr;
