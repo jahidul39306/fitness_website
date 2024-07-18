@@ -245,8 +245,25 @@ nav h3 > i{
 }
 /* bmi section */
 .bmi{
-    background: rgb(34, 34, 34);
     margin-top: 6.25rem;
+    text-align: center;
+}
+.bmi > h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.bmi > p{
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 3.5rem;
+} 
+.bmi-content{
+    background: rgb(34, 34, 34);
+    margin-top: 4.5rem;
+    text-align: left;
 }
 .bmi-container{
     max-width: 1440px;
